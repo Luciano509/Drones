@@ -16,7 +16,7 @@ tello_address = ('192.168.10.1', 8889) # Get the Tello drone's address
 # Creates a UDP socketd
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-sock.bind(locaddr)
+#sock.bind(locaddr)
 
 
 def recv():
@@ -44,25 +44,28 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 # Make a Square Function With a For Loop
-def firsthoop()
-    
+def firsthoop():
+    sendmsg('up 60')
+    sendmsg('forward 300')
 
 
-def secondhoop()
+def secondhoop():
+    sendmsg('up 125')
+    sendmsg('forward 150')
 
 
+def thirdhoop():
+    sendmsg('up 125')
+    sendmsg('forward 150')
 
-def thirdhoop()
 
+def fourthhoop():
+    sendmsg('up 125')
+    sendmsg('forward 150')
 
-
-def fourthhoop()
-
-def flip():
-    sendmsg('flip f')
 
 print("\nLuciano Macias")
-print("Program Name: Drone Flying School")
+print("Program Name: Drone Competition")
 print("Date: 11.6.20")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
@@ -76,9 +79,7 @@ try:
         sendmsg('command')
         sendmsg('takeoff', 8)
 
-        square()
-        flip()
-        flip()
+        firsthoop()
 
         sendmsg('land')
 
