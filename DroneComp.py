@@ -43,26 +43,26 @@ recvThread.start()
 
 # CREATE FUNCTIONS HERE....
 
-# Make a Square Function With a For Loop
+# Drone Mission Through the First Hoop
 def firsthoop():
     sendmsg('up 60')
     sendmsg('forward 300')
-
-
+'''
+# Drone Mission Through the Second Hoop
 def secondhoop():
     sendmsg('up 125')
     sendmsg('forward 150')
 
-
+# Drone Mission Through the Third Hoop
 def thirdhoop():
     sendmsg('up 125')
     sendmsg('forward 150')
 
-
+# Drone Mission Through the Fourth Hoop
 def fourthhoop():
     sendmsg('up 125')
     sendmsg('forward 150')
-
+'''
 
 print("\nLuciano Macias")
 print("Program Name: Drone Competition")
