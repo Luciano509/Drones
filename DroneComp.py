@@ -45,14 +45,14 @@ recvThread.start()
 
 # Drone Mission Through the First Hoop
 def firsthoop():
-    sendmsg('up 60')
-    sendmsg('forward 200')
-'''
-# Drone Mission Through the Second Hoop
-def secondhoop():
-    sendmsg('up 125')
+    sendmsg('up 45')
     sendmsg('forward 150')
 
+# Drone Mission Through the Second Hoop
+def secondhoop():
+    sendmsg('go 200 0 60 75')
+
+'''
 # Drone Mission Through the Third Hoop
 def thirdhoop():
     sendmsg('up 125')
@@ -80,7 +80,7 @@ try:
         sendmsg('takeoff', 8)
 
         firsthoop()
-
+        secondhoop()
         sendmsg('land')
 
         print('\nGreat Flight!!!')
