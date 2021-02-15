@@ -52,12 +52,12 @@ def firsthoop():
 def secondhoop():
     sendmsg('go 200 0 60 75')
 
-'''
+
 # Drone Mission Through the Third Hoop
 def thirdhoop():
-    sendmsg('up 125')
-    sendmsg('forward 150')
-
+    sendmsg('ccw 90')
+    sendmsg('go 200 100 0 75')
+'''
 # Drone Mission Through the Fourth Hoop
 def fourthhoop():
     sendmsg('up 125')
@@ -81,6 +81,7 @@ try:
 
         firsthoop()
         secondhoop()
+        thirdhoop()
         sendmsg('land')
 
         print('\nGreat Flight!!!')
