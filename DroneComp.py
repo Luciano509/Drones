@@ -55,8 +55,7 @@ def secondhoop():
 
 # Drone Mission Through the Third Hoop
 def thirdhoop():
-    sendmsg('ccw 90')
-    sendmsg('go 200 100 0 75')
+    sendmsg('curve 0 0 0 200 0 200 75')
 '''
 # Drone Mission Through the Fourth Hoop
 def fourthhoop():
